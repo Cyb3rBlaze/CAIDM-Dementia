@@ -1,0 +1,2 @@
+output_dir,fold,batch_size,LR,alpha,iterations,kernel_regularizer
+/home/mmorelan/projects/dementia_test/train/exp/01,0,4,0.001,1,500,0
