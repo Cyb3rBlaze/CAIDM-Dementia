@@ -24,7 +24,7 @@ specs:
             lower: 0.8
             upper: 1.2
       shape: [96, 160, 160, 1]
-   ys:
+  ys:
     lbl:
       dtype: uint8
       loads: AD

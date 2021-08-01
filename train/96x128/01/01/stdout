@@ -1,0 +1,468 @@
+2021-07-29 12:03:56.872483: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2021-07-29 12:03:56.872580: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2021-07-29 12:03:56.872590: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-07-29 12:03:58.127090: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-07-29 12:03:58.173487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:43:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-07-29 12:03:58.173725: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-29 12:03:58.175405: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-29 12:03:58.177211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-29 12:03:58.177436: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-29 12:03:58.179104: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-29 12:03:58.179978: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-29 12:03:58.183402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-29 12:03:58.185420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2021-07-29 12:03:58.185760: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-07-29 12:03:58.194104: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3000130000 Hz
+2021-07-29 12:03:58.196253: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558d584ce010 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-07-29 12:03:58.196287: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-07-29 12:03:58.321044: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558d584ca2c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-07-29 12:03:58.321073: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-07-29 12:03:58.322134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:43:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-07-29 12:03:58.322185: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-29 12:03:58.322199: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-29 12:03:58.322211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-29 12:03:58.322222: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-29 12:03:58.322238: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-29 12:03:58.322249: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-29 12:03:58.322260: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-29 12:03:58.324067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2021-07-29 12:03:58.324099: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-29 12:03:58.325499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-29 12:03:58.325510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0 
+2021-07-29 12:03:58.325516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2021-07-29 12:03:58.327569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10320 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:43:00.0, compute capability: 7.5)
+2021-07-29 12:04:00.819683: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-29 12:04:01.720813: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-07-29 12:04:01.771010: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+[ 2021-07-29 12:03:58 ] CUDA_VISIBLE_DEVICES automatically set to: 1           
+
+Start of epoch 0
+Training loss (for one batch) at step 0: 8.8893
+Seen so far: 3 samples
+Training loss (for one batch) at step 1: 15.3063
+Seen so far: 6 samples
+Training loss (for one batch) at step 2: 7.2373
+Seen so far: 9 samples
+Training loss (for one batch) at step 3: 9.2579
+Seen so far: 12 samples
+Training loss (for one batch) at step 4: 6.8814
+Seen so far: 15 samples
+Training loss (for one batch) at step 5: 6.9844
+Seen so far: 18 samples
+Training loss (for one batch) at step 6: 10.3406
+Seen so far: 21 samples
+Training loss (for one batch) at step 7: 5.2384
+Seen so far: 24 samples
+Training loss (for one batch) at step 8: 9.7272
+Seen so far: 27 samples
+Training loss (for one batch) at step 9: 5.4579
+Seen so far: 30 samples
+Training loss (for one batch) at step 10: 4.0593
+Seen so far: 33 samples
+Training loss (for one batch) at step 11: 3.7621
+Seen so far: 36 samples
+Training loss (for one batch) at step 12: 7.1545
+Seen so far: 39 samples
+Training loss (for one batch) at step 13: 3.7694
+Seen so far: 42 samples
+Training loss (for one batch) at step 14: 5.5408
+Seen so far: 45 samples
+Training loss (for one batch) at step 15: 3.5355
+Seen so far: 48 samples
+Training loss (for one batch) at step 16: 7.6352
+Seen so far: 51 samples
+Training loss (for one batch) at step 17: 4.3229
+Seen so far: 54 samples
+Training loss (for one batch) at step 18: 4.6133
+Seen so far: 57 samples
+Training loss (for one batch) at step 19: 5.0153
+Seen so far: 60 samples
+Training loss (for one batch) at step 20: 4.7911
+Seen so far: 63 samples
+Training loss (for one batch) at step 21: 4.9041
+Seen so far: 66 samples
+Training loss (for one batch) at step 22: 4.2758
+Seen so far: 69 samples
+Training loss (for one batch) at step 23: 2.4673
+Seen so far: 72 samples
+Training loss (for one batch) at step 24: 5.0668
+Seen so far: 75 samples
+Training loss (for one batch) at step 25: 4.0604
+Seen so far: 78 samples
+Training loss (for one batch) at step 26: 4.6343
+Seen so far: 81 samples
+Training loss (for one batch) at step 27: 1.8716
+Seen so far: 84 samples
+Training loss (for one batch) at step 28: 1.8094
+Seen so far: 87 samples
+Training loss (for one batch) at step 29: 8.1932
+Seen so far: 90 samples
+Training loss (for one batch) at step 30: 5.7018
+Seen so far: 93 samples
+Training loss (for one batch) at step 31: 3.2171
+Seen so far: 96 samples
+Training loss (for one batch) at step 32: 7.6823
+Seen so far: 99 samples
+Training loss (for one batch) at step 33: 2.5897
+Seen so far: 102 samples
+Training loss (for one batch) at step 34: 2.8036
+Seen so far: 105 samples
+Training loss (for one batch) at step 35: 3.2045
+Seen so far: 108 samples
+Training loss (for one batch) at step 36: 3.0147
+Seen so far: 111 samples
+Training loss (for one batch) at step 37: 2.8866
+Seen so far: 114 samples
+Training loss (for one batch) at step 38: 3.3906
+Seen so far: 117 samples
+Training loss (for one batch) at step 39: 4.0929
+Seen so far: 120 samples
+Training loss (for one batch) at step 40: 3.1332
+Seen so far: 123 samples
+Training loss (for one batch) at step 41: 2.9274
+Seen so far: 126 samples
+Training loss (for one batch) at step 42: 3.2373
+Seen so far: 129 samples
+Training loss (for one batch) at step 43: 3.0904
+Seen so far: 132 samples
+Training loss (for one batch) at step 44: 3.3427
+Seen so far: 135 samples
+Training loss (for one batch) at step 45: 3.2397
+Seen so far: 138 samples
+Training loss (for one batch) at step 46: 3.1883
+Seen so far: 141 samples
+Training loss (for one batch) at step 47: 3.1485
+Seen so far: 144 samples
+Training loss (for one batch) at step 48: 2.6056
+Seen so far: 147 samples
+Training loss (for one batch) at step 49: 3.2115
+Seen so far: 150 samples
+Training loss (for one batch) at step 50: 2.5383
+Seen so far: 153 samples
+Training loss (for one batch) at step 51: 1.8968
+Seen so far: 156 samples
+Training loss (for one batch) at step 52: 7.2804
+Seen so far: 159 samples
+Training loss (for one batch) at step 53: 4.7462
+Seen so far: 162 samples
+Training loss (for one batch) at step 54: 4.4641
+Seen so far: 165 samples
+Training loss (for one batch) at step 55: 3.2692
+Seen so far: 168 samples
+Training loss (for one batch) at step 56: 4.2387
+Seen so far: 171 samples
+Training loss (for one batch) at step 57: 2.4433
+Seen so far: 174 samples
+Training loss (for one batch) at step 58: 2.8739
+Seen so far: 177 samples
+Training loss (for one batch) at step 59: 3.1849
+Seen so far: 180 samples
+Training loss (for one batch) at step 60: 3.8490
+Seen so far: 183 samples
+Training loss (for one batch) at step 61: 3.3021
+Seen so far: 186 samples
+Training loss (for one batch) at step 62: 3.0566
+Seen so far: 189 samples
+Training loss (for one batch) at step 63: 2.6915
+Seen so far: 192 samples
+Training loss (for one batch) at step 64: 3.3608
+Seen so far: 195 samples
+Training loss (for one batch) at step 65: 3.4488
+Seen so far: 198 samples
+Training loss (for one batch) at step 66: 3.3135
+Seen so far: 201 samples
+Training loss (for one batch) at step 67: 2.7814
+Seen so far: 204 samples
+Training loss (for one batch) at step 68: 3.3668
+Seen so far: 207 samples
+Training loss (for one batch) at step 69: 2.8924
+Seen so far: 210 samples
+Training loss (for one batch) at step 70: 3.0906
+Seen so far: 213 samples
+Training loss (for one batch) at step 71: 3.1855
+Seen so far: 216 samples
+Training loss (for one batch) at step 72: 3.0253
+Seen so far: 219 samples
+Training loss (for one batch) at step 73: 3.0135
+Seen so far: 222 samples
+Training loss (for one batch) at step 74: 2.9692
+Seen so far: 225 samples
+Training loss (for one batch) at step 75: 2.9317
+Seen so far: 228 samples
+Training loss (for one batch) at step 76: 3.0415
+Seen so far: 231 samples
+Training loss (for one batch) at step 77: 3.2380
+Seen so far: 234 samples
+Training loss (for one batch) at step 78: 2.9763
+Seen so far: 237 samples
+Training loss (for one batch) at step 79: 2.9047
+Seen so far: 240 samples
+Training loss (for one batch) at step 80: 3.1300
+Seen so far: 243 samples
+Training loss (for one batch) at step 81: 3.5258
+Seen so far: 246 samples
+Training loss (for one batch) at step 82: 2.8245
+Seen so far: 249 samples
+Training loss (for one batch) at step 83: 2.8088
+Seen so far: 252 samples
+Training loss (for one batch) at step 84: 2.9867
+Seen so far: 255 samples
+Training loss (for one batch) at step 85: 3.1865
+Seen so far: 258 samples
+Training loss (for one batch) at step 86: 2.7827
+Seen so far: 261 samples
+Training loss (for one batch) at step 87: 2.6072
+Seen so far: 264 samples
+Training loss (for one batch) at step 88: 3.2876
+Seen so far: 267 samples
+Training loss (for one batch) at step 89: 2.6178
+Seen so far: 270 samples
+Training loss (for one batch) at step 90: 2.7207
+Seen so far: 273 samples
+Training loss (for one batch) at step 91: 3.3459
+Seen so far: 276 samples
+Training loss (for one batch) at step 92: 2.6983
+Seen so far: 279 samples
+Training loss (for one batch) at step 93: 3.2263
+Seen so far: 282 samples
+Training loss (for one batch) at step 94: 2.6673
+Seen so far: 285 samples
+Training loss (for one batch) at step 95: 2.3797
+Seen so far: 288 samples
+Training loss (for one batch) at step 96: 2.8206
+Seen so far: 291 samples
+Training loss (for one batch) at step 97: 3.3687
+Seen so far: 294 samples
+Training loss (for one batch) at step 98: 2.2790
+Seen so far: 297 samples
+Training loss (for one batch) at step 99: 3.0421
+Seen so far: 300 samples
+Training loss (for one batch) at step 100: 2.4170
+Seen so far: 303 samples
+Training acc over epoch:
+ 0.5247524976730347 
+ 0.49504950642585754 
+ 0.6831682920455933
+Validation acc:
+ 0.7623762488365173 
+ 0.6732673048973083 
+ 0.4752475321292877
+Time taken: 104.67s
+
+Start of epoch 1
+Training loss (for one batch) at step 0: 2.5460
+Seen so far: 3 samples
+Training loss (for one batch) at step 1: 2.8501
+Seen so far: 6 samples
+Training loss (for one batch) at step 2: 2.8639
+Seen so far: 9 samples
+Training loss (for one batch) at step 3: 2.8731
+Seen so far: 12 samples
+Training loss (for one batch) at step 4: 3.4606
+Seen so far: 15 samples
+Training loss (for one batch) at step 5: 2.9488
+Seen so far: 18 samples
+Training loss (for one batch) at step 6: 2.5608
+Seen so far: 21 samples
+Training loss (for one batch) at step 7: 5.1862
+Seen so far: 24 samples
+Training loss (for one batch) at step 8: 3.8666
+Seen so far: 27 samples
+Training loss (for one batch) at step 9: 2.3629
+Seen so far: 30 samples
+Training loss (for one batch) at step 10: 2.5595
+Seen so far: 33 samples
+Training loss (for one batch) at step 11: 2.7239
+Seen so far: 36 samples
+Training loss (for one batch) at step 12: 3.2933
+Seen so far: 39 samples
+Training loss (for one batch) at step 13: 2.3434
+Seen so far: 42 samples
+Training loss (for one batch) at step 14: 3.1870
+Seen so far: 45 samples
+Training loss (for one batch) at step 15: 2.9035
+Seen so far: 48 samples
+Training loss (for one batch) at step 16: 2.9412
+Seen so far: 51 samples
+Training loss (for one batch) at step 17: 2.9231
+Seen so far: 54 samples
+Training loss (for one batch) at step 18: 3.1057
+Seen so far: 57 samples
+Training loss (for one batch) at step 19: 2.8886
+Seen so far: 60 samples
+Training loss (for one batch) at step 20: 2.9653
+Seen so far: 63 samples
+Training loss (for one batch) at step 21: 2.9105
+Seen so far: 66 samples
+Training loss (for one batch) at step 22: 3.0524
+Seen so far: 69 samples
+Training loss (for one batch) at step 23: 2.9297
+Seen so far: 72 samples
+Training loss (for one batch) at step 24: 3.0264
+Seen so far: 75 samples
+Training loss (for one batch) at step 25: 3.0167
+Seen so far: 78 samples
+Training loss (for one batch) at step 26: 2.7074
+Seen so far: 81 samples
+Training loss (for one batch) at step 27: 2.8713
+Seen so far: 84 samples
+Training loss (for one batch) at step 28: 2.6566
+Seen so far: 87 samples
+Training loss (for one batch) at step 29: 2.4356
+Seen so far: 90 samples
+Training loss (for one batch) at step 30: 3.0951
+Seen so far: 93 samples
+Training loss (for one batch) at step 31: 2.5800
+Seen so far: 96 samples
+Training loss (for one batch) at step 32: 2.8343
+Seen so far: 99 samples
+Training loss (for one batch) at step 33: 2.8354
+Seen so far: 102 samples
+Training loss (for one batch) at step 34: 2.5416
+Seen so far: 105 samples
+Training loss (for one batch) at step 35: 3.3273
+Seen so far: 108 samples
+Training loss (for one batch) at step 36: 2.4435
+Seen so far: 111 samples
+Training loss (for one batch) at step 37: 3.6273
+Seen so far: 114 samples
+Training loss (for one batch) at step 38: 3.7817
+Seen so far: 117 samples
+Training loss (for one batch) at step 39: 2.2430
+Seen so far: 120 samples
+Training loss (for one batch) at step 40: 2.4198
+Seen so far: 123 samples
+Training loss (for one batch) at step 41: 2.7458
+Seen so far: 126 samples
+Training loss (for one batch) at step 42: 2.6451
+Seen so far: 129 samples
+Training loss (for one batch) at step 43: 2.3982
+Seen so far: 132 samples
+Training loss (for one batch) at step 44: 3.3690
+Seen so far: 135 samples
+Training loss (for one batch) at step 45: 2.1969
+Seen so far: 138 samples
+Training loss (for one batch) at step 46: 2.3676
+Seen so far: 141 samples
+Training loss (for one batch) at step 47: 2.4462
+Seen so far: 144 samples
+Training loss (for one batch) at step 48: 2.3100
+Seen so far: 147 samples
+Training loss (for one batch) at step 49: 3.3209
+Seen so far: 150 samples
+Training loss (for one batch) at step 50: 2.3052
+Seen so far: 153 samples
+Training loss (for one batch) at step 51: 3.6797
+Seen so far: 156 samples
+Training loss (for one batch) at step 52: 2.5297
+Seen so far: 159 samples
+Training loss (for one batch) at step 53: 2.8289
+Seen so far: 162 samples
+Training loss (for one batch) at step 54: 2.6657
+Seen so far: 165 samples
+Training loss (for one batch) at step 55: 2.4573
+Seen so far: 168 samples
+Training loss (for one batch) at step 56: 2.8001
+Seen so far: 171 samples
+Training loss (for one batch) at step 57: 2.7958
+Seen so far: 174 samples
+Training loss (for one batch) at step 58: 2.8287
+Seen so far: 177 samples
+Training loss (for one batch) at step 59: 2.4677
+Seen so far: 180 samples
+Training loss (for one batch) at step 60: 2.3943
+Seen so far: 183 samples
+Training loss (for one batch) at step 61: 2.6342
+Seen so far: 186 samples
+Training loss (for one batch) at step 62: 2.6804
+Seen so far: 189 samples
+Training loss (for one batch) at step 63: 2.9513
+Seen so far: 192 samples
+Training loss (for one batch) at step 64: 2.4199
+Seen so far: 195 samples
+Training loss (for one batch) at step 65: 3.0985
+Seen so far: 198 samples
+Training loss (for one batch) at step 66: 2.4616
+Seen so far: 201 samples
+Training loss (for one batch) at step 67: 3.0044
+Seen so far: 204 samples
+Training loss (for one batch) at step 68: 2.4121
+Seen so far: 207 samples
+Training loss (for one batch) at step 69: 2.4894
+Seen so far: 210 samples
+Training loss (for one batch) at step 70: 2.8490
+Seen so far: 213 samples
+Training loss (for one batch) at step 71: 2.9799
+Seen so far: 216 samples
+Training loss (for one batch) at step 72: 2.3264
+Seen so far: 219 samples
+Training loss (for one batch) at step 73: 2.7991
+Seen so far: 222 samples
+Training loss (for one batch) at step 74: 3.6573
+Seen so far: 225 samples
+Training loss (for one batch) at step 75: 3.3492
+Seen so far: 228 samples
+Training loss (for one batch) at step 76: 2.8394
+Seen so far: 231 samples
+Training loss (for one batch) at step 77: 2.6641
+Seen so far: 234 samples
+Training loss (for one batch) at step 78: 2.9202
+Seen so far: 237 samples
+Training loss (for one batch) at step 79: 2.8523
+Seen so far: 240 samples
+Training loss (for one batch) at step 80: 2.8156
+Seen so far: 243 samples
+Training loss (for one batch) at step 81: 2.8419
+Seen so far: 246 samples
+Training loss (for one batch) at step 82: 2.3251
+Seen so far: 249 samples
+Training loss (for one batch) at step 83: 2.4343
+Seen so far: 252 samples
+Training loss (for one batch) at step 84: 2.8869
+Seen so far: 255 samples
+Training loss (for one batch) at step 85: 2.6033
+Seen so far: 258 samples
+Training loss (for one batch) at step 86: 2.8228
+Seen so far: 261 samples
+Training loss (for one batch) at step 87: 2.7743
+Seen so far: 264 samples
+Training loss (for one batch) at step 88: 2.3436
+Seen so far: 267 samples
+Training loss (for one batch) at step 89: 2.6406
+Seen so far: 270 samples
+Training loss (for one batch) at step 90: 2.2975
+Seen so far: 273 samples
+Training loss (for one batch) at step 91: 3.2348
+Seen so far: 276 samples
+Training loss (for one batch) at step 92: 3.2951
+Seen so far: 279 samples
+Training loss (for one batch) at step 93: 2.6060
+Seen so far: 282 samples
+Training loss (for one batch) at step 94: 2.7961
+Seen so far: 285 samples
+Training loss (for one batch) at step 95: 2.7123
+Seen so far: 288 samples
+Training loss (for one batch) at step 96: 2.8856
+Seen so far: 291 samples
+Training loss (for one batch) at step 97: 3.3171
+Seen so far: 294 samples
+Training loss (for one batch) at step 98: 2.6151
+Seen so far: 297 samples
+Training loss (for one batch) at step 99: 2.6772
+Seen so far: 300 samples
+Training loss (for one batch) at step 100: 2.6026
+Seen so far: 303 samples
+Training acc over epoch:
+ 0.8118811845779419 
+ 0.6336633563041687 
+ 0.5346534848213196
+Validation acc:
+ 0.9306930899620056 
+ 0.5742574334144592 
+ 0.4653465449810028
+Time taken: 96.23s
