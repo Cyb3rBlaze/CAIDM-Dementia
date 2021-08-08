@@ -8,8 +8,13 @@ if [ -z $1 ] || [ -z $2 ] ; then
     exit
 fi
 
-# Generates bash files for each permutation
-jarvis script -jmodels "/home/mmorelan/proj/dementia/train/$1/" -output_dir "/home/mmorelan/proj/dementia/train/$1/scripts/"
+path=$(echo $(cd ../ && pwd)/"train")
 
-# Sends the generated bash files to the GPU cluster
-jarvis cluster add -scripts "/home/mmorelan/proj/dementia/train/$1/scripts/*.sh" -workers "$2"
+# Set python path
+python $path/$1/"env.py" $path/$1/"train.py"
+
+# # Generates bash files for each permutation
+jarvis script -py "train" -jmodels $path/$1/ -output_dir $path/$1/"scripts"/
+
+# # Sends the generated bash files to the GPU cluster
+jarvis cluster add -scripts $path/$1/"scripts/*.sh" -workers "$2"
