@@ -1,0 +1,2 @@
+output_dir,fold,batch_size,LR,iterations
+/home/brandon/test_zone/group/dementia/train/96x128/lr_tuner_mae/01,0,3,0.0003,3000
