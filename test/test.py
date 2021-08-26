@@ -33,6 +33,7 @@ class TestLosses(unittest.TestCase):
         # Cosine similarity implementation should yield same value as default TensorFlow implementation
         a = np.random.rand(1, 10)
         b = np.random.rand(1, 10)
+
         self.assertAlmostEqual(1 - metrics.CosineSimilarity()(a, b).numpy(), custom_losses.cosine_similarity([a, b]).numpy().squeeze(), places=3)
         
         # Random vectors should yield 0 < loss < 1

@@ -1,0 +1,85 @@
+_id:
+  project: adni
+  version: null
+_db: /data/ymls/db-sum-3d.yml
+current:
+  train:
+    AD:
+      epoch: 0
+      count: 0
+      rseed: 1915541508
+    CN:
+      epoch: 0
+      count: 0
+      rseed: 3174101277
+  valid:
+    AD:
+      epoch: 0
+      count: 0
+      rseed: 4002569094
+    CN:
+      epoch: 0
+      count: 0
+      rseed: 3736236595
+batch:
+  fold: 0
+  size: 3
+  sampling:
+    AD: 0.5
+    CN: 0.5
+  training:
+    train: 0.8
+    valid: 0.2
+specs:
+  xs:
+    dat:
+      dtype: float32
+      input: true
+      loads: dat-96x128
+      norms:
+        shift: '@mean'
+        scale: '@std'
+        rands:
+          shift:
+            lower: 0.8
+            upper: 1.2
+          scale:
+            lower: 0.8
+            upper: 1.2
+      shape:
+        saved:
+        - 96
+        - 128
+        - 128
+        - 1
+        input:
+        - 96
+        - 128
+        - 128
+        - 1
+      xform: null
+  ys:
+    lbl:
+      dtype: uint8
+      input: true
+      loads: AD
+      norms: null
+      shape:
+        saved:
+        - 1
+        - 1
+        - 1
+        - 1
+        input:
+        - 1
+        - 1
+        - 1
+        - 1
+      xform: null
+  load_kwargs: {}
+  in_memory: false
+  tiles:
+  - false
+  - false
+  - false
+  - false

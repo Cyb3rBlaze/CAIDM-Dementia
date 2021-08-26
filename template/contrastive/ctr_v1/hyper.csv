@@ -1,0 +1,2 @@
+output_dir,fold,batch_size,LR,alpha,iterations
+/home/mmorelan/proj/dementia/template/contrastive/test_exp/01,0,8,0.001,1,200

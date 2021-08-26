@@ -1,3 +1,9 @@
+# Custom
+*.hdf5
+jmodels/
+
+
+# Python
 .DS_Store
 .ipynb_checkpoints
 node_modules
