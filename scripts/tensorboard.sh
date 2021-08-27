@@ -7,4 +7,4 @@ if [ -z $1 ] ; then
     exit
 fi
 
-tensorboard --logdir /home/mmorelan/proj/dementia/train/$1/jmodels/logdirs/ --bind_all --port 0
+tensorboard --logdir /home/${USER}/proj/dementia/train/$1/jmodels/logdirs/ --bind_all --port 0
