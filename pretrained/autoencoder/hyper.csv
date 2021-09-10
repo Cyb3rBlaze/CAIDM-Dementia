@@ -1,0 +1,5 @@
+output_dir,fold,batch_size,LR,iterations,drop_rate,contrast,recon
+/home/brandon/test_zone/group/dementia/train/96x128/ablation_mae_big_batch_small_lr/01,0,4,0.0001,3000,0,0,0
+/home/brandon/test_zone/group/dementia/train/96x128/ablation_mae_big_batch_small_lr/02,0,4,0.0001,3000,0,1,0
+/home/brandon/test_zone/group/dementia/train/96x128/ablation_mae_big_batch_small_lr/03,0,4,0.0001,3000,0,0,1
+/home/brandon/test_zone/group/dementia/train/96x128/ablation_mae_big_batch_small_lr/04,0,4,0.0001,3000,0,1,1
