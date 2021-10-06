@@ -1,5 +1,0 @@
-output_dir,fold,batch_size,LR,iterations,steps_per_epoch,ctr_channels,num_blocks,filter_scale,kernel_size,strides,max_pool,ctr1,ctr2,cls1,cls2,cls3,dec1,dec2,dec3
-/home/mmorelan/proj/dementia/train/96x128/12/01,0,3,0.00001,5000,100,100,3,8,3,1,2,0.01,0.01,0.01,0.01,0.01,0.98,0.98,0.98
-/home/mmorelan/proj/dementia/train/96x128/12/02,0,3,0.00001,5000,100,100,3,8,3,1,2,0.1,0.1,0.1,0.1,0.1,0.8,0.8,0.8
-/home/mmorelan/proj/dementia/train/96x128/12/03,0,3,0.00001,5000,100,100,3,8,3,1,2,0.2,0.2,0.2,0.2,0.2,0.6,0.6,0.6
-/home/mmorelan/proj/dementia/train/96x128/12/04,0,3,0.00001,5000,100,100,3,8,3,1,2,1,1,1,1,1,1,1,1

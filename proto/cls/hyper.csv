@@ -1,0 +1,2 @@
+output_dir,fold,batch_size,LR,iterations,cn_weight,ad_weight,drop_rate
+/home/mmorelan/proj/dementia/template/classification/01/01,0,8,0.0001,1000,1.0,2.0,0.2
