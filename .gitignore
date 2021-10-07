@@ -1,6 +1,7 @@
 # Custom
 *.hdf5
 jmodels/
+train/
 
 
 # Python
